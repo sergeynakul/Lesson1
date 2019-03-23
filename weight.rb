@@ -4,7 +4,7 @@ name = gets.chomp
 
 puts "Какой у Вас рост?"
 
-growth = Integer(gets.chomp)
+growth = gets.chomp.to_i
 
 ideal_weight = growth - 110
 

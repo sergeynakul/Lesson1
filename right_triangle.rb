@@ -1,11 +1,11 @@
 puts "Укажите длину первой стороны в мм"
-a = Integer(gets.chomp)
+a = gets.chomp.to_i
 
 puts "Укажите длину второй стороны в мм"
-b = Integer(gets.chomp)
+b = gets.chomp.to_i
 
 puts "Укажите длину третьей стороны в мм"
-c = Integer(gets.chomp)
+c = gets.chomp.to_i
 
 abc = [a, b, c].sort
 
@@ -15,6 +15,6 @@ elsif a == b && b == c
   puts "Треугольник равнобедренный и равносторонний, но не прямоугольный"
 end
 
-if a == b || b == c || a==c
+if a == b || b == c || a == c
   puts "Треугольник является равнобедренным"
 end
