@@ -2,11 +2,11 @@ puts "Вычислим площадь треугольника"
 
 puts "Введите длину основания в см"
 
-a = Integer(gets.chomp)
+a = gets.chomp.to_f
 
 puts "Введите высоту в см"
 
-h = Integer(gets.chomp)
+h = gets.chomp.to_f
 
 area = a * h / 2
 

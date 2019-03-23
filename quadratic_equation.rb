@@ -9,13 +9,15 @@ c = Integer(gets.chomp)
 
 d = b**2 - 4 * a * c
 
+square_root = Math.sqrt(d)
+   
 if d > 0
-	x1 = (-b + Math.sqrt(d)) / 2 * a
-	x2 = (-b - Math.sqrt(d)) / 2 * a
-	puts "Дискриминант = #{d}, первой корень = #{x1}, второй корень = #{x2}"
+  x1 = (-b + square_root) / 2 * a
+  x2 = (-b - square_root) / 2 * a
+  puts "Дискриминант = #{d}, первой корень = #{x1}, второй корень = #{x2}"
 elsif d == 0
-	x = -b / 2 * a
-	puts "Дискриминант = #{d}, корень = #{x}"
+  x = -b / 2 * a
+  puts "Дискриминант = #{d}, корень = #{x}"
 else
-	puts "Корней нет"
+  puts "Корней нет"  
 end
